@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="bg-white nav">
+        <nav class="max-w-[1200px] mx-auto flex justify-between items-center px-[50px]">
+            <!-- logo -->
+            <a href="index.html" class="flex items-center gap-5 cursor-pointer">
+                <img src="./assets/images/logo.png" alt="logo" />
+                <h1 class="font-bold text-2xl">Zarrin</h1>
+            </a>
+            <!-- menu -->
+            <input class="hidden" type="checkbox" id="menuBar">
+
+            <div class="md:flex  menu">
+                <ul class="flex items-center gap-10 text-[15px]">
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./404.html"> <i class="fa-solid fa-magnifying-glass"></i></a></li>
+
+                    <li>
+                        <a href="./contact.html" class="bg-[#7C4EE4] w-[128px] text-white px-3 py-3 rounded-lg">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- for mobile -->
+            <div class="sm:hidden">
+                <label for="menuBar" >
+                    <img src="./assets/images/menu.png" class="w-[40px] cursor-pointer" alt="" />
+                </label>
+            </div>
+
+        </nav>
+    </div>
+    <div class="flex justify-center items-center h-[500px] w-[90%] m-auto">
+
+        <div
+            class="w-[756px] h-[372px] m-auto bg-[#7c4ee4] rounded-2xl  flex  flex-col  gap-5 justify-center items-center">
+            <h1 class="font-bold text-[78px] text-white">404</h1>
+            <p class="text-white">
+                Sorry</p>
+            <p class="text-white text-[20px] md:text-[24px] text-center">
+                The link is broken, try to refresh or go to home</p>
+            <a href="./contact.html" class="bg-white w-[128px] text-black px-3  py-3 rounded-lg">Go To Home</a>
+        </div>
+    </div>
+
+    <div class="h-[534px] w-full bg-[#7C4EE4] flex  flex-col  gap-5 justify-center items-center">
+        <h1 class="text-[20px]  md:text-[34px] lg:text-[52px] text-center font-bold  w-[285px] md:w-[551px] lg:w-[800px]  text-white">
+            Get our stories delivered From us to your inbox weekly.
+        </h1>
+        <div>
+            <input type="email" class="border-none h-[40px] rounded-lg w-[229px]  px-2" placeholder="Enter Your Email">
+            <button class="px-4 py-2  text-white rounded-lg border-2 border-white bg-transparent">Get Started</button>
+        
+        </div>
+        <p class="text-[#BBBBBB] md:text-[16px] lg:text-[18px] text-[11px] text-center lg:w-[555px] w-[282px] md:[398px]">
+            Get a response tomorrow if you submit by 9pm today. If we received after 9pm will get a reponse the following day.
+        </p>
+         </div>
+         <!-- foters -->
+         <footer class="flex justify-center items-center flex-col gap-4 py-5 h-[390px]">
+            <div class="flex items-center gap-6 cursor-pointer">
+                <img src="./assets/images/logo.png" class="w-[32px]" alt="logo">
+                <h1 class="font-bold text-2xl text-[30px]">Zarrin</h1>
+            </div>
+            <nav class="flex items-center">
+                <ul class="flex gap-10 items-center">
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+            <div class="flex items-center gap-5">
+                <img src="./assets/images/Dribbble.png" alt="">
+                <img src="./assets/images/Instagram.png" alt="">
+                <img src="./assets/images/Twitter.png" alt="">
+                <img src="./assets/images/Behance.png" alt="">
+            </div>
+            <div class="border-b-2 border-[#7C4EE4] max-w-[1200px] m-auto w-full" ></div>
+            <p class="">Copyright Ideapeel Inc © 2023. All Right Reserved</p>
+         </footer>
+
+</body>
+
+</html>

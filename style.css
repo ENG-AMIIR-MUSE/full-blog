@@ -1,0 +1,62 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    height: 70px;
+}
+.hero{
+    min-height: calc(100vh - 70px);
+}
+
+.hero .right-hero{
+    /* background-color: green; */
+    /* width: 50%; */
+}
+.hero .right-hero img{
+    width: 436px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+
+@media screen and (max-width:768px){
+
+    .nav .menu{
+        background-color: white;
+        position: absolute;
+        top: 74px;
+        padding-block: 20px;
+        width: 100%;
+        left: 0;
+        display: none;
+        padding-left: 10px;
+        flex-direction: column;
+    }
+    .nav .menu  ul{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav .menu ul li{
+        /* border-bottom: 1px solid gray; */
+        width: 100%;
+        /* padding-bottom: 15px; */
+    }
+    .nav .menu ul li:last-child a{
+        background-color: red;
+        background-color: transparent;
+        color: black;
+        padding: 0;
+    }
+    
+    input[type='checkbox']:checked ~ .menu{
+        /* background-color: red; */
+        display: block;
+    }
+}
